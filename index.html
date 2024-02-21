@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
+    <title>EzeZulu</title>
+  </head>
+  <body>
+    <div class="weatherApp">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Give us your city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time">Sunday 11:30</span> ,<span id="description">
+                sunny day</span
+              >
+              <br />
+              Humidity: <strong id="humidity"> 10% </strong>, Wind:
+              <strong id="speed"> 2 km/h </strong>
+            </p>
+          </div>
+          <div class="weather-app-temp-container">
+            <div id="icon"></div>
+            <div class="weather-app-icon"></div>
+
+            <div class="weather-app-temp" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        Built by
+        <a href="https://github.com/dashboard" target="_blank">
+          Nomathamsanqa Msomi
+        </a>
+        and is hosted
+        <a
+          href="https://github.com/Thamia-99/Weather-Application-w7/"
+          target="_blank"
+          >on Github</a
+        >
+        hosted
+        <a
+          href="https://app.netlify.com/sites/w7-weather-app/deploys/65d10807612c0bd223c523d5"
+          target="_blank"
+          >on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
